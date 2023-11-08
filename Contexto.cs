@@ -12,5 +12,6 @@ namespace TelmaBolossite
         public DbSet<Itemencomenda> ITEMENCOMENDA { get; set; }
         public DbSet<Produto> PRODUTOS { get; set; }
         public DbSet<Login> LOGIN  { get; set; }
+        public DbSet<Categoria> CATEGORIAS { get; set; }
     }
 }
