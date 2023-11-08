@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Bolo Caseiro";
+}
+
+<link rel="stylesheet" href="~/css/BoloCaseiro.css" />
+
+<div class="toolbar">
+    <h1 class="brand">Bolos Caseiros:</h1>
+    <br>
+    <p>
+        <a href="cart.html">
+            Itens no Carrinho:
+            <span id="count">0</span>, Total:
+            <span id="sum">0</span>
+        </a>
+    </p>
+</div>
+
+<div class="products">
+    <div class="product">
+        <h3>Bolo de Fubá</h3>
+        <p>
+            <img src="~/img/bolofuba.png.jpeg" />Valor: R$40,00
+        </p>
+        <button data-id="1" data-price="40" data-title="Bolo de Fubá">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+        <h3>Bolo de Laranja</h3>
+        <p>
+            <img src="~/img/bolocaseiro.png" />Valor: R$40,00
+        </p>
+        <button data-id="2" data-price="40" data-title="Bolo de Laranja">Adicionar ao carrinho</button>
+    </div>
+</div>
+
+
+<script src="~/js/app.js"></script>

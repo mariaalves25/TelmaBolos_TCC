@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Carrinho";
+}
+
+<link rel="stylesheet" href="~/css/Carrinho.css"/>
+
+<table>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+
+<div class="comprar-button">
+    <button><a asp-controller="Home" asp-action="Index">Adicionar Itens</a></button>
+</div>
+
+<br>
+
+<div class="finalizar-button">
+    <button><a asp-controller="Home" asp-action="Index">Finalizar Compra</a> </button>
+</div>
+
+
+<script src="js/cart.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>

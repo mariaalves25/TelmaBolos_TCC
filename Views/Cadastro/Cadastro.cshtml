@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastro";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/Cadastro.css" asp-append-version="true" />
+<link rel="icon" href="~/img/logo.png" type="image" width="32" height="32">
+
+<div class="container_c">
+    <div class="form-image">
+        <img src="~/img/logotipo.png" alt="">
+        <a asp-controller="Home" asp-action="Index" class="botao">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </a>
+    </div>
+    <div class="form">
+        <form action="index.html">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class="login-button">
+                    <a asp-controller="Login" asp-action="Login">Login</a>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" class="input-form-cad" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" class="input-form-cad" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" class="input-form-cad" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input id="number" class="input-form-cad" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                </div>
+
+                <div class="input-box password-form">
+                    <label for="password">Senha</label>
+                    <input id="password" class="input-form-cad" type="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="input-box input-form-cad">
+                    <label for="confirmPassword">Confirme sua Senha</label>
+                    <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                </div>
+
+            </div>
+
+            <div class="continue-button">
+                <button><a asp-controller="Home" asp-action="Index">Continuar</a> </button>
+            </div>
+        </form>
+    </div>
+</div>
