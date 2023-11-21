@@ -14,17 +14,17 @@
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="descricaoproduto" class="control-label"></label>
+                <label asp-for="descricaoproduto" class="control-label">Descrição do Produto</label>
                 <input asp-for="descricaoproduto" class="form-control" />
                 <span asp-validation-for="descricaoproduto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="valorproduto" class="control-label"></label>
+                <label asp-for="valorproduto" class="control-label">Valor do Produto</label>
                 <input asp-for="valorproduto" class="form-control" />
                 <span asp-validation-for="valorproduto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="unidadeproduto" class="control-label"></label>
+                <label asp-for="unidadeproduto" class="control-label">Unidade de Produto</label>
                 <input asp-for="unidadeproduto" class="form-control" />
                 <span asp-validation-for="unidadeproduto" class="text-danger"></span>
             </div>
@@ -34,17 +34,17 @@
                 
             </div>
             <div class="form-group">
-                <label asp-for="CategoriaId" class="control-label"></label>
+                <label asp-for="CategoriaId" class="control-label">Categoria do Produto</label>
                 <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Adicionar" class="btn btn-" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Retornar à lista</a>
 </div>
 
