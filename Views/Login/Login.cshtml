@@ -1,4 +1,4 @@
-﻿
+﻿@model TelmaBolos.Models.Login
 @{
     ViewData["Title"] = "Login";
     Layout = null;
@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="form">
-        <form action="index.html">
+        <form method="post" asp-action="Continuar">
             <div class="form-header">
                 <div class="title">
                     <h1>Login</h1>
@@ -33,17 +33,17 @@
 
                 <div class="input-box email-form">
                     <label for="email">E-mail</label>
-                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <input asp-for="emailcliente" id="email" type="email" name="emailcliente" placeholder="Digite seu e-mail" required>
                 </div>
 
                 <div class="input-box password-form">
                     <label for="password">Senha</label>
-                    <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    <input asp-for="senhacliente" id="password" type="password" name="senhacliente" placeholder="Digite sua senha" required>
                 </div>
             </div>
 
             <div class="continue-button">
-                <button><a asp-controller="Home" asp-action="Index">Continuar</a></button>
+                <input type="submit" value="Continuar" asp-action="Continuar">
             </div>
         </form>
     </div>

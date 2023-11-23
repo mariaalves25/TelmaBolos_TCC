@@ -8,27 +8,34 @@
 <table>
     <thead>
         <tr>
-            <th>Produto</th>
-            <th>Valor</th>
-            <th>Quantidade</th>
+            <th>
+                Produto
+
+            </th>
+            <th>
+                Valor
+
+            </th>
+            <th>
+                Quantidade
+
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody id="tbody">
     </tbody>
 </table>
 
-<div class="comprar-button">
-    <button><a asp-controller="Home" asp-action="Index">Adicionar Itens</a></button>
+
+<div class="row">
+<div>
+    <a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Home">Adicionar itens</a>
+    <a class="btn btn-outline-success" asp-action="Index">Finalizar Compra</a>
+</div>
 </div>
 
-<br>
-
-<div class="finalizar-button">
-    <button><a asp-controller="Home" asp-action="Index">Finalizar Compra</a> </button>
-</div>
-
-
-<script src="js/cart.js"></script>
+<script src="~/js/cart.js"></script>
 
 
 

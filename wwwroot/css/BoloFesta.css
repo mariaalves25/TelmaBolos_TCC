@@ -160,3 +160,11 @@ p {
     color: #24262b;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.img-bolo img {
+    width: 250px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

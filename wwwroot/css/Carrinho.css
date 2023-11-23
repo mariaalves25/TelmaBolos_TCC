@@ -68,12 +68,12 @@
 
 /*Aqui muda o carrinho*/
 table {
-    color: #A0522D;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 thead {
-    color: #24262b;
+    color: black;
 }
 
 select {
@@ -85,6 +85,10 @@ select {
 p {
     margin-top: 0%;
     margin-bottom: 1rem;
-    color: #24262b;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn btn-success {
+    border-radius: 0;
 }
