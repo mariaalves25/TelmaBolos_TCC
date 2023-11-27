@@ -18,14 +18,14 @@
         </a>
     </div>
     <div class="form">
-        <form method="post" asp-action="Continuar">
+        <form method="post" action="/Login/Continuar">
             <div class="form-header">
                 <div class="title">
                     <h1>Login</h1>
                 </div>
 
                 <div class="login-button">
-                    <a asp-controller="Cadastro1" asp-action="Cadastro">Cadastrar-se</a>
+                    <a asp-controller="Cadastro" asp-action="Cadastro">Cadastrar-se</a>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-                <input type="submit" class="continue-button" value="Continuar" asp-action="Continuar">
+                <button type="submit" class="continue-button">Continuar</button>
 
         </form>
     </div>

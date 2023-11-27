@@ -8,5 +8,10 @@ namespace TelmaBolossite.Controllers
         {
             return View();
         }
+
+        public IActionResult Finalizado()
+        {
+            return View();
+        }
     }
 }

@@ -22,12 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\BoloFestaController - Copy.cs" />
-    <Compile Remove="Controllers\CadastroController.cs" />
-    <Compile Remove="Controllers\Destaque.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="wwwroot\css\.editorconfig" />
     <Content Remove="wwwroot\css\BoloCaseiro - Cópia.css" />
